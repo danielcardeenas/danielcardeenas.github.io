@@ -11,7 +11,7 @@ Hi there. This is still on progress
 ## Desktop:
 
 _Been working with stocks a lot recently_
-+ [MacBot](https://github.com/danielcardeenas/leind-stocks) => Customizable whatsapp bot.
++ [MacBot](https://github.com/danielcardeenas/MacBot) => Customizable whatsapp bot.
     + Stack: **[ Python ]**
 + [AudioStego](https://github.com/danielcardeenas/AudioStego) => Steganography application.
     + Stack: **[ Steganography | Byte manipulaiton | C++ ]**
