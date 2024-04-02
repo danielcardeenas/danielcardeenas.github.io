@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@master/css-extractor.vite": "^2.0.0-rc.26",
     "preact": "^10.19.6"
   },
   "devDependencies": {
