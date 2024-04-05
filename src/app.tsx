@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './App.css';
+import './app.css';
 import Spline from '@splinetool/react-spline';
 import { useState } from 'react';
 
