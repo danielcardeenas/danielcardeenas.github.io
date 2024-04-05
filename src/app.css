@@ -1,39 +1,16 @@
 #root {
-  padding: 2rem;
-}
+  padding: 0;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 18px;
+  background: #1d1d1d;
+  /* background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%); */
+  width: 100%;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  background-color: #212121;
+  border-color: hsla(0, 0%, 100%, 0.03);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMicgd2lkdGg9JzMyJyBoZWlnaHQ9JzMyJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYigyNTUgMjU1IDI1NS8gMC4wMTUpJz48cGF0aCBkPSdNMCAuNUgzMS41VjMyJy8+PC9zdmc+);
 }
