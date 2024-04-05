@@ -1,16 +1,7 @@
 #root {
   padding: 0;
-  margin: 24px;
   display: flex;
   flex-direction: column;
   color: white;
-  border-radius: 18px;
-  background: #1d1d1d;
-  /* background-color: #74ebd5;
-  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%); */
   width: 100%;
-
-  background-color: #212121;
-  border-color: hsla(0, 0%, 100%, 0.03);
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMicgd2lkdGg9JzMyJyBoZWlnaHQ9JzMyJyBmaWxsPSdub25lJyBzdHJva2U9J3JnYigyNTUgMjU1IDI1NS8gMC4wMTUpJz48cGF0aCBkPSdNMCAuNUgzMS41VjMyJy8+PC9zdmc+);
 }
