@@ -12,8 +12,6 @@
   "dependencies": {
     "@master/css": "^2.0.0-rc.26",
     "@master/css-extractor.vite": "^2.0.0-rc.26",
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^1.0.91",
     "framer-motion": "^11.0.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
