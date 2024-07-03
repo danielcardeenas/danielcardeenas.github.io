@@ -2176,3 +2176,7 @@ body {
   pointer-events: none !important;
   opacity: 0.5 !important;
 }
+
+.profiles > a {
+  min-width: 180px;
+}
