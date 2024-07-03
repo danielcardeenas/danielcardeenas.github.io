@@ -22,7 +22,6 @@ const skillsBackend = [
   "Firebase",
   "Pupeteer",
   "Playwright",
-  "Node.js",
   "Cloudflare",
   "AWS",
   "GCS",
@@ -30,6 +29,9 @@ const skillsBackend = [
   "C++",
   "Java",
   "CI/CD",
+  "Automated Testing",
+  "Aeron",
+  "Websockets",
 ];
 
 const details = [
