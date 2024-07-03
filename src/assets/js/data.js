@@ -43,8 +43,8 @@ const details = [
 
 const navigation = [
   { name: "Resume", href: "./" },
-  { name: "Projects", href: "./projects.html" },
-  { name: "Blog", href: "./blog.html" },
+  { name: "Projects", href: "./projects.html", disabled: true },
+  // { name: "", href: "./blog.html", disabled: true },
 ];
 
 /**
@@ -56,73 +56,85 @@ const navigation = [
 const jobsList = [
   {
     icon: "./assets/images/luxoft.png",
-    role: "Senior Software Engineer",
+    role: "Senior Software Engineer - Lead Developer",
     company: "Luxoft",
-    location: "Remote / Guadalajara, MX",
-    period: "Jul 2022 - Present",
+    location: "Remote | Guadalajara, MX",
+    period: "2022 - Present",
     type: "Full-time",
     description:
       "Developed and maintained web applications using React, Node.js, and Python. Worked with a team of engineers to deliver high-quality software on time and within budget.",
   },
   {
     icon: "./assets/images/cemex.jpeg",
-    role: "Software Development Engineer in Test",
-    company: "Microsoft",
-    location: "Redmond, WA",
-    period: "Aug 2017 - Jan 2018",
+    role: "Senior Software Engineer - Frontend Architecture",
+    company: "Cemex",
+    location: "Remote | Monterrey, MX",
+    period: "2018 - Jan 2022",
     type: "Full-time",
-    description:
-      "Wrote and executed test cases for Microsoft's Windows operating system. Worked with a team of engineers to ensure the quality of the software.",
+    href: "./previews/cemex-orders.html",
+    largePreview: true,
+    description: `Module creation from scratch. We used mainly Angular and React to create webcomponents. This application is targeted
+to Cemex clients for easy buying and delivery to their jobsites. Supports more 20+ countries`,
   },
   {
     icon: "./assets/images/dhl.jpeg",
-    role: "Contractor - Fronetned Software Engineer",
-    company: "Amazon",
-    location: "Seattle, WA",
-    period: "Feb 2018 - Jun 2020",
-    type: "Full-time",
+    role: "Contractor - Full Stack Developer",
+    company: "DHL",
+    location: "Remote",
+    type: "Freelance",
     description:
-      "Designed and implemented new features for Amazon's e-commerce platform. Worked on a team of engineers to improve the user experience and increase sales.",
+      "Web application system development for DHL tracking of custom deliveries for B2B.",
   },
   {
     icon: "./assets/images/genie.jpeg",
-    role: "Software Engineer Intern",
-    company: "Amazon",
-    location: "Seattle, WA",
-    period: "Feb 2018 - Jun 2020",
+    role: "Senior Software Engineer",
+    company: "Genie",
+    location: "Remote | Seattle, WA",
+    period: "2022 - 2023",
     type: "Full-time",
-    description:
-      "Designed and implemented new features for Amazon's e-commerce platform. Worked on a team of engineers to improve the user experience and increase sales.",
+    description: "Low lever software development with C++ for Genie machines.",
   },
   {
     icon: "./assets/images/stukent.jpeg",
-    role: "Software Engineer Intern",
-    company: "Tesla",
-    location: "Palo Alto, CA",
-    period: "Dec 2016 - May 2017",
+    role: "Full Stack Developer",
+    company: "Stukent",
+    location: "Remote",
+    period: "2021 - 2022",
     type: "Freelance",
     description:
-      "Developed software for Tesla's autonomous driving vehicles. Worked on a team of engineers to improve the safety and reliability of the software.",
+      "Courseware development for digital  courses. Developed interactive web applications using React, Node.js, and .NET.",
   },
   {
-    icon: "https://soybacalar.com/img_logos/616c7c7e89651.png",
-    role: "Software Engineer Intern",
-    company: "Tesla",
-    location: "Palo Alto, CA",
-    period: "Dec 2016 - May 2017",
+    icon: "./assets/images/cemex.jpeg",
+    role: "Frontend Developer",
+    location: "Moneterrey, MX",
+    company: "Cemex",
+    period: "Aug 2016 - Jan 2018",
     type: "Full-time",
+    href: "./previews/cemex-old.html",
+    largePreview: true,
+    description: "",
+  },
+  {
+    icon: "./assets/images/oxxo.png",
+    role: "Software Architecture, Lead Developer",
+    company: "Oxxo",
+    location: "Moneterrey, MX",
+    period: "2014 - 2016",
+    type: "Full-time",
+    href: "./previews/oxxo.html",
     description:
-      "Developed software for Tesla's autonomous driving vehicles. Worked on a team of engineers to improve the safety and reliability of the software.",
+      "Designed and implemented of a kiosk system for autoservice in selected Oxxo’s stores.",
   },
   {
     icon: "./assets/images/epicor.jpeg",
     role: "Software Engineer Intern",
-    company: "Tesla",
-    location: "Palo Alto, CA",
-    period: "Dec 2016 - May 2017",
+    company: "Epicor",
+    location: "San Pedro Garza García, MX",
+    period: "2011 - 2013",
     type: "Full-time",
     description:
-      "Developed software for Tesla's autonomous driving vehicles. Worked on a team of engineers to improve the safety and reliability of the software.",
+      "My first job. Developed a CRM system for Epicor’s clients and later on I got moved to the ERP team.",
   },
 ];
 
@@ -130,31 +142,39 @@ const jobsList = [
 
 const educationList = [
   {
-    icon: "./assets/images/stanford.jpg",
-    degree: "Master of Science in Computer Science",
-    university: "Stanford University",
-    location: "Stanford, CA",
-    period: "2018 - 2020",
+    icon: "./assets/images/uanl.jpeg",
+    degree: "Physics",
+    university: "UANL - Facultad de Ciencias Físico Matemáticas",
+    location: "NL, Mexico",
+    period: "2023",
     description:
-      "Developed a machine learning algorithm to predict customer churn. Built a web application to help students find roommates.",
+      "Study of the fundamental principles of physics, including mechanics, electromagnetism, thermodynamics, and quantum mechanics.",
   },
   {
-    icon: "./assets/images/universityofcalifornia.jpg",
-    degree: "Bachelor of Science in Computer Science",
-    university: "University of California",
-    location: "Berkeley, CA",
-    period: "2014 - 2018",
+    icon: "./assets/images/uanl.jpeg",
+    degree: "Software Engineer",
+    university: "UANL - Facultad de Ingeniería Mecánica Eléctrica",
+    location: "NL, Mexico",
+    period: "2011 - 2016",
     description:
-      "Developed a mobile app to help students track their expenses. Built a website for a local business.",
+      "Study of software development principles, algorithms, data structures, and programming languages. Specialized in web development and cloud computing.",
   },
   {
-    icon: "./assets/images/deanza.jpg",
-    degree: "Associate of Science in Computer Science",
-    university: "De Anza College",
-    location: "Cupertino, CA",
-    period: "2012 - 2014",
+    icon: "./assets/images/udemy.png",
+    degree: "Machine Learning A-Z™: Hands-On Python & R In Data Science ",
+    university: "Udemy",
+    location: "Remote",
+    period: "2018",
+    description: "Machine Learning course",
+  },
+  {
+    icon: "./assets/images/pnp.png",
+    degree: "Startup Founder Program",
+    university: "PlugNPlay",
+    location: "Santa Clara, CA",
+    period: "2015",
     description:
-      "Developed a game using Python. Built a website for a student organization.",
+      "Developed a mobile app to help people find places. Daily workshops focused on how produce a fast app launching for startups, marketing, innovation, etc...",
   },
 ];
 

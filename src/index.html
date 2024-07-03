@@ -10,9 +10,15 @@
       content="Unlock career opportunities with our sleek digital CV template."
     />
     <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/jquery.minipreview.css" rel="stylesheet" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
     ></script>
     <title>Resumo – Digital CV Template</title>
   </head>
@@ -63,7 +69,8 @@
               <div class="ra va hb pb">
                 <p class="ac">
                   Full-stack developer with 10+ years of experience in building
-                  web apps and systems. Creative projects.
+                  web apps and systems.
+                  I am interested in working on supply chain, logistics, and B2B selling products.
                 </p>
 
                 <div x-data="skills" class="p ea ka">
@@ -114,14 +121,10 @@
             <div class="o ra va hb pb">
               <div class="a b ac prose-gray">
                 <p>
-                  I love engineering and all the aspects that it involves,
-                  especially software. I like to create and develop great things
-                  that look great and work great. My strongest skill is
-                  Frontend development. I enjoy doing it with nice details, good
-                  looking feel, and doesn’t drains me since I’m usually
-                  efficient doing it as a job. I keep myself updated doing
-                  personal projects or open source just for the joy of
-                  programming. Im interested in high performant appliciations.
+                  Very good at reading and understanding code. I have a strong
+                  background in web development and I am always looking for new
+                  challenges. I am a very creative person and I love to work on
+                  projects that require a lot of creativity.
                 </p>
               </div>
 
@@ -140,7 +143,7 @@
                     />
                   </svg>
                   <span class="zb group-hover:hc group-hover:ic">
-                    danielcardeenas.github.io
+                    https://github.com/danielcardeenas
                   </span>
                 </a>
 
@@ -194,7 +197,7 @@
               <template x-for="link in navigation">
                 <a
                   x-bind:href="link.href"
-                  :class="link.href === './' ? '_b hb': 'ac'"
+                  :class="{ '_b hb': link.href === './', 'ac': link.href !== './', 'unabled': link.disabled}"
                   class="q x ia va rb tb.5 zb ec hover:hb hover:_b"
                   x-text="link.name"
                 >
@@ -216,17 +219,28 @@
 
               <div x-data="jobsList" class="o qa.5">
                 <template x-for="job in jobsList">
-                  <div class="va hb pb ec hover:fb">
+                  <div
+                    x-bind:href="job.href"
+                    class="va hb pb ec hover:fb"
+                    :class="{ 'minipreview': job.href && !job.largePreview, 'minipreview-large': job.largePreview }"
+                  >
                     <div class="p da la sm:kc">
                       <img x-bind:src="job.icon" alt="" class="ua xa bb dc t" />
 
                       <div class="x">
                         <div class="p ea ha ja pa">
                           <h3 class="zb" x-text="job.role"></h3>
-                          <span
-                            class="q ha ta gb qb sb yb zb ac"
-                            x-text="job.type"
-                          >
+                          <span>
+                            <template x-if="job.href">
+                              <span class="q ha ta gb qb sb yb zb ac">
+                                Hoverable
+                              </span>
+                            </template>
+                            <span
+                              class="q ha ta gb qb sb yb zb ac"
+                              x-text="job.type"
+                            >
+                            </span>
                           </span>
                         </div>
 
@@ -363,5 +377,7 @@
     </div>
 
     <script src="assets/js/data.js"></script>
+    <script src="assets/js/jquery.minipreviews.js"></script>
+    <script src="controllers/previews.js"></script>
   </body>
 </html>
