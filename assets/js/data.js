@@ -84,6 +84,7 @@ to Cemex clients for easy buying and delivery to their jobsites. Supports more 2
     company: "DHL",
     location: "Remote",
     type: "Freelance",
+    period: "2022 - Jan 2024",
     description:
       "Web application system development for DHL tracking of custom deliveries for B2B.",
   },
